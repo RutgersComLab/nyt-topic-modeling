@@ -44,3 +44,16 @@ Dynamic Topic Modeling (DTM) using BERTopic - DTM
 ## Output
 
 ## References
+LDA
+LDASeq
+BERTopic
+BERTopic-DTM
+NLTK
+Gensim
+spaCy
+Plotly
+Pandas
+Numpy
+Haystack
+scikit-learn
+pyLDAvis
