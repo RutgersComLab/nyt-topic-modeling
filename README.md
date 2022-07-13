@@ -29,7 +29,7 @@ The source of data is from the [The New York Times][nyt] website. All the data f
 
 ![Folder structure of the Raw layer](screenshots/raw.png?raw=true "Folder structure of the Raw layer")
 
-### Data Cleaning
+### Cleansed Layer
 The first step involved in data cleaning is to categorize the articles based on the decade it was written. There are a few approaches taken here:
 <ol>
 	<li>1950-1959: No cleaning was required on the articles written during this decade.</li>
@@ -43,7 +43,7 @@ The code for this layer is available [here](code/automation/Data%20Cleaning%20an
 
 ![Folder structure of the Cleaned layer](screenshots/cleaned.png?raw=true "Folder structure of the Cleaned layer")
 
-### Data Transformation
+### Transformed Layer
 This is the final layer before starting the analysis. We apply a variety of rules in this layer to prepare the data for subsequent layers. First, we remove stopwords, prepositions, punctuations, pronouns and common words from all the articles. The folder structure after this has been applied on the cleaned layer looks like:
 
 ![Folder structure of the Transformed layer](screenshots/transformed.png?raw=true "Folder structure of the Transformed layer")
@@ -60,7 +60,7 @@ Next, we create unigrams, bigrams and trigrams for each article. We also get the
     ('trigramCount', trigramCount)
 ]
 ```
-Finally, we save the generated JSONs as JSONL files, and do some validation to make sure we have not lost any articles between the cleaned and transformed layers.
+Finally, we save the generated JSONs as JSONL files, and do some validation to make sure we have not lost any articles between the cleaned and transformed layers. The code for this layer is available [here](code/automation/Data%20Cleaning%20and%20Transformation.ipynb).
 
 ![JSONL files](screenshots/jsonl.png?raw=true "JSONL files")
 
