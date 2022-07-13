@@ -96,7 +96,7 @@ In this section, we will discuss the results of the analysis:
 ***TBD***
 
 ## Packages/References/Credits
-Package | Link
+Item | Link
 --- | ---
 LDA | https://radimrehurek.com/gensim/models/ldamodel.html
 LDASeq | https://radimrehurek.com/gensim/models/ldaseqmodel.html
