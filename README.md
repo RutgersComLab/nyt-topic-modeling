@@ -68,7 +68,7 @@ Finally, we save the generated JSONs as JSONL files, and do some validation to m
 The approach towards the analysis can be split into two methodologies depending on our objective:
 
 ### Identifying the trends for Automation
-To understand how the trends have changed for 'automation' across decades, we look at the frequency of occurence for the word 'automation' in the articles through 3 different persepetives:
+To understand how the trends have changed for 'automation' across decades, we look at the frequency of occurence for the word 'automation' in the articles through 3 different persepetives.
 
 #### Persepctive 1
 Aims to answer how many times the word automation occured as a unigram, bigram or trigram in the corpus for each decade, on a file level. The code for this approach is [available here](code/automation/Count.ipynb), and the result can be [found here](https://github.com/jacobceles/nyt-topic-modeling/tree/main/results/automation/count_id).
@@ -77,11 +77,11 @@ Aims to answer how many times a bigram or trigram was present in the corpus for 
 #### Persepctive 3
 Aims to answer how many times a bigram or trigram was present in the corpus for each decade, on a word level, after lemmatization. The code for this approach is [available here](code/automation/Count.ipynb), and the result can be [found here](https://github.com/jacobceles/nyt-topic-modeling/tree/main/results/automation/count_word_lemmatized).
 
-### Visualizing the trends for Automation
+#### Visualization
 We also build a visualization on top of the results of Persepctive 3 to get a better sense of the distrbution of the top 50 words in the corpus across decades. The code used to build the visualization is [available here](code/automation/Count%20Visualization.ipynb), and the actual visualization can be [accessed here](results/automation/visualization%20-%20bigram%20%26%20trigram.7z).
 
 ### Identifying the trend for Other Topics
-This project approaches the problem using 4 different techniques:
+We use different topic modeling techniques to find dominant topics in each decade, and also perfrom dynamic topic modeling to capture the evolution of topics. The approaches taken are:
 <ol>
 	<li>Decade wise topic modeling using LDA</li>
 	<li>Decade wise topic modeling using BERTopic</li>
@@ -89,26 +89,30 @@ This project approaches the problem using 4 different techniques:
 	<li>Dynamic Topic Modeling (DTM) using BERTopic - DTM</li>
 </ol>
 
-### Visualizing the trends for Other Topics
+The code for these sections are well commented, so I am not discussing them further. You can view and download the code [here](https://github.com/jacobceles/nyt-topic-modeling/tree/main/code/other%20topics) and, the results as visualizations [here](https://github.com/jacobceles/nyt-topic-modeling/tree/main/results/other%20topics).
 
-## Output
+## Results
+In this section, we will discuss the results of the analysis:
+***TBD***
 
-## References
-LDA
-LDASeq
-BERTopic
-BERTopic-DTM
-NLTK
-Gensim
-spaCy
-Plotly
-Pandas
-Numpy
-Haystack
-scikit-learn
-pyLDAvis
-The New York Times
-ProQuest
+## Packages/References/Credits
+Package | Link
+--- | ---
+LDA | https://radimrehurek.com/gensim/models/ldamodel.html
+LDASeq | https://radimrehurek.com/gensim/models/ldaseqmodel.html
+BERTopic | https://github.com/MaartenGr/BERTopic/
+BERTopic-DTM | https://github.com/MaartenGr/BERTopic/#dynamic-topic-modeling
+NLTK | https://www.nltk.org/
+Gensim | https://radimrehurek.com/gensim/
+spaCy | https://spacy.io/
+Plotly | https://plotly.com/
+Pandas | https://pandas.pydata.org/
+Numpy | https://numpy.org/
+Haystack | https://haystack.deepset.ai/overview/intro
+scikit-learn | https://scikit-learn.org/stable/index.html
+pyLDAvis | https://github.com/bmabey/pyLDAvis
+The New York Times | https://www.nytimes.com/
+ProQuest | https://www.proquest.com/
 
 [lda]:https://radimrehurek.com/gensim/models/ldamodel.html
 [lda_Seq]:https://radimrehurek.com/gensim/models/ldaseqmodel.html
